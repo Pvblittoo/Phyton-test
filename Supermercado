@@ -1,0 +1,32 @@
+
+
+total=0
+
+
+cant=int(input("cuantos productos llevara "))
+
+for i in range (cant):
+    print(''' 
+    1.- diazepam $9000
+    2.-matametozona $18500
+    3.-Oblea china $1000
+          ''')
+    op=int(input())
+    if op==1:
+        print("usted lleva diazepam")
+        total=total+9000
+    elif op==2:
+         print("usted lleva matametozona")
+         total=total+18500
+    elif op==3:
+         print("usted lleva obea china")
+         total=total+1000
+    else:
+         print("no oblea china")
+         break
+    if 3>1:
+         print("lleva mucha oblea china no mas oblea china")
+
+print("el total neto es ",total)
+print("el total con iva es",total*1.19)
+
