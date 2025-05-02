@@ -1,0 +1,65 @@
+import random
+
+
+# numrandom=random.randint(1,50)
+# num=int(input("Ingrese un numero"))
+
+# while num!=numrandom:
+#     print(numrandom)
+#     if num>numrandom:
+#         print("el numero a adivinar es menor")
+#     else:
+#         print("el numero a adivinar es mayor")
+#     num=int(input("Ingrese un numero"))
+# print("le achuntaste")
+
+# barril=random.randint(1,6)
+# rul=int(input("dispare"))
+
+# while rul !=barril:
+#     rul=int(input("dispare"))
+# print("Bang")
+
+comuna=int(input("Donde vives: 1-la florida 2-la pintana 3-puente alto 4-san joaquin "))
+
+arancel=200000
+descuento=0
+if comuna==1:
+    print("se le asignara un 20% de descuento ")
+    descuento=0.20
+elif comuna==2:
+    print("se asignara un 30% de descuento")
+    descuento=0.30
+elif comuna==3:
+    print("se le aplicara un 25% de descuento")
+    descuento=0.25
+elif comuna==4:
+    print("se le aplicara un 15% de descuento")
+    descuento=0.15
+else:
+    print("seleccion incorrecta")
+
+personas=int(input("con cuantas personas vive incluyendose usted "))     
+
+if personas==1:
+    print("su descuento familiar es de 2%")
+    descuento=descuento+0.02
+elif personas>=2 and personas<=4:
+    print("su descuento familiar es de 3%")
+    descuento=descuento+0.03
+elif personas>=5:
+    print("su descuento familiar es de 4%")
+    descuento=descuento+0.04
+else:
+    print("numero no valido")
+
+valor=arancel-descuento*arancel
+print("el total del descuento es",descuento)
+print("el valor total de su arancel mas descuento es de",valor)
+    
+
+
+
+
+
+
