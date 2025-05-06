@@ -1,0 +1,38 @@
+
+
+
+cingresos=int(input("ingrese cantidad de ingresos "))
+puntajecredito=0
+
+if cingresos <=500000 and cingresos >=1000000:
+    print("usted tiene un cupo de 300.000")
+    puntajecredito=puntajecredito+300000
+if cingresos >=1000000 and cingresos <=1500000:
+    print("usted tiene un cupo de 650.000")
+    puntajecredito=puntajecredito+650000
+if cingresos >=1500001:
+    print("usted tiene un cupo de 1.000.000")
+    puntajecredito=puntajecredito+1000000
+
+print("///////////////////////////////////////////////////////")
+neducacional=input("ingrese su nivel educacional basico medio superior ").lower()
+
+if neducacional=="basico":
+    puntajecredito=puntajecredito*1
+if neducacional=="medio":
+    puntajecredito=puntajecredito*1.3
+if neducacional=="superior":
+    puntajecredito=puntajecredito*1.5
+
+print("///////////////////////////////////////////////////////")
+nacionalidad=input("ingrese su nacionalidad chilena venezolana ").lower()
+
+if nacionalidad.lower=="chilena":
+    puntajecredito+=300000
+if nacionalidad.lower=="venezolana":
+    print("se le restaran 400.000 por ser veneco")
+    puntajecredito=puntajecredito-400000
+
+print("///////////////////////////////////////////////////////")
+
+print(f"su cupo total de credito es ",puntajecredito)
