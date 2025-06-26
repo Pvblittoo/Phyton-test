@@ -1,6 +1,9 @@
 deuda=100000
 cupo=2000000
+cuotas_c_interes=0
+cancela_cuotas=0
 total=0
+interes=1.07
 p_comprados=[]
 while True:
     try:
@@ -66,5 +69,8 @@ while True:
             case 6:
                 print(f"su total es{total}y su total con iva es{total*1.19}")
                 print("su cupo restante sera de",cupo)
+                f_pago=int(input("desea pagar en cuotas o al contado 1.cuotas 2.al contado"))
+                
     except Exception:
         print("Ingrese un valor valido")
+        
